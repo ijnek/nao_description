@@ -13,13 +13,13 @@ def generate_launch_description():
             package='rviz2',
             executable='rviz2',
             arguments=[
-                "-d", os.path.join(get_package_share_directory('naosoccer_sim'), 'nao.rviz')
+                "-d", os.path.join(get_package_share_directory('nao_description'), 'rviz', 'nao.rviz')
             ]
         ),
         Node(
             package='nao_description',
             executable='zero_joint_state_publisher'
-        )
+        ),
     ])
 
 
