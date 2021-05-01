@@ -27,12 +27,9 @@ install(TARGETS
   zero_joint_state_publisher
   DESTINATION lib/${PROJECT_NAME})
 
-install(
-  DIRECTORY urdf/ 
-  DESTINATION share/${PROJECT_NAME}/urdf/)
-
-install(
-  DIRECTORY launch/ 
-  DESTINATION share/${PROJECT_NAME}/launch/)
+foreach(dir urdf launch rviz meshes texture)
+  install(DIRECTORY ${dir}/ 
+     DESTINATION share/${PROJECT_NAME}/${dir}/)
+endforeach(dir)
 
 ament_package()
