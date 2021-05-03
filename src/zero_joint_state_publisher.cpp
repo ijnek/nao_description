@@ -36,7 +36,7 @@ class ZeroJointStatePublisher : public rclcpp::Node
 public:
     ZeroJointStatePublisher() : Node("ZeroJointStatePublisher")
     {
-        publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("/joint_states", 10);
+        publisher_ = this->create_publisher<sensor_msgs::msg::JointState>("joint_states", 10);
         timer_ = this->create_wall_timer(
             500ms, std::bind(&ZeroJointStatePublisher::timer_callback, this));
 
