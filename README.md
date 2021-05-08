@@ -1,5 +1,4 @@
 # nao_description
-DO NOT MAKE THIS PUBLIC, IT CONFLICTS WITH SOFTWARE LICENSING. urdf model of robot
 
 ## Setup
 
