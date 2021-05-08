@@ -9,7 +9,7 @@ To install the 3d model meshes for the NAO,
     chmod +x naomeshes-0.6.7-linux-x64-installer.run
     ./naomeshes-0.6.7-linux-x64-installer.run
 
-Copy meshes/ and texture/ directory into this package's root directory.
+**Copy meshes/ and texture/ directory into this package's root directory.**
 
 ## Running
 
