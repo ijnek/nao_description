@@ -50,8 +50,6 @@ public:
 private:
     void timer_callback()
     {
-        RCLCPP_INFO(this->get_logger(), "Publishing zero state");
-
         state.header.stamp = now();
         publisher_->publish(state);
     }
