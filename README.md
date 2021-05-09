@@ -19,7 +19,7 @@ To visualise the urdf robot in rviz, run
 
 ## Environment
 
-Developed and tested on ros2 foxy, on Ubuntu 20.04
+Tested for ROS2 FOXY, on Ubuntu 20.04
 
 ## Using in another launch file
 
