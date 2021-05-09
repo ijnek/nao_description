@@ -17,6 +17,9 @@ To visualise the urdf robot in rviz, run
 
 `ros2 launch nao_description everything_launch.py`
 
+## Environment
+
+Developed and tested on ros2 foxy, on Ubuntu 20.04
 
 ## Using in another launch file
 
