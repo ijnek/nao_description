@@ -27,11 +27,11 @@ install(TARGETS
   zero_joint_state_publisher
   DESTINATION lib/${PROJECT_NAME})
 
-if(NOT EXISTS meshes)
+if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/meshes)
   message(FATAL_ERROR "Missing meshes directory, please follow instructions in README.md to install meshes")
 endif()
 
-if(NOT EXISTS texture)
+if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/texture)
   message(FATAL_ERROR "missing texture directory, please follow instructions in README.md to install texture")
 endif()
 
