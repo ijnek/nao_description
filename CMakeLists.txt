@@ -36,9 +36,9 @@ if(NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/texture)
 endif()
 
 foreach(dir urdf launch rviz meshes texture)
-  install(DIRECTORY ${dir}/ 
-     DESTINATION share/${PROJECT_NAME}/${dir}/)
-endforeach(dir)
+  install(DIRECTORY ${dir}/
+    DESTINATION share/${PROJECT_NAME}/${dir}/)
+endforeach()
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
