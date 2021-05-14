@@ -28,16 +28,21 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME})
 
 if(NOT EXISTS meshes)
-  message(FATAL_ERROR, "Missing meshes directory, please follow instructions in README.md to install meshes")
+  message(FATAL_ERROR "Missing meshes directory, please follow instructions in README.md to install meshes")
 endif()
 
 if(NOT EXISTS texture)
-  message(FATAL_ERROR, "missing texture directory, please follow instructions in README.md to install texture")
+  message(FATAL_ERROR "missing texture directory, please follow instructions in README.md to install texture")
 endif()
 
 foreach(dir urdf launch rviz meshes texture)
   install(DIRECTORY ${dir}/ 
      DESTINATION share/${PROJECT_NAME}/${dir}/)
 endforeach(dir)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()
