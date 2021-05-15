@@ -1,6 +1,3 @@
-## NOTE: THIS PACKAGE IS UNDER HEAVY DEVELOPMENT AND NOT READY FOR USE
-
-
 # nao_description
 
 ## Setup
